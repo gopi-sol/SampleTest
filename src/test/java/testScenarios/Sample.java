@@ -25,6 +25,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.sikuli.script.FindFailed;
+import org.sikuli.script.Pattern;
+import org.sikuli.script.Screen;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -72,9 +75,11 @@ public class Sample extends BaseClass{
 	 }
 	 
 	 @Test
-	public void xmlDownload() throws IOException, InterruptedException {
-
-
+	public void xmlDownload() throws IOException, InterruptedException, FindFailed {
+String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
+		 Screen s = new Screen();
+	        Pattern fileInputTextBox = new Pattern(filepath+File.separator+"FileTextBox.PNG");
+	        Pattern openButton = new Pattern(filepath+File.separator+"SaveButton.PNG");
 		driver.get("http://www.landxmlproject.org/file-cabinet");
 		 
 		 LocalDate today = LocalDate.now();
@@ -148,13 +153,10 @@ public class Sample extends BaseClass{
 //		 
 //		 new WebDriverWait(driver, 20).until(ExpectedConditions.titleContains("Untitled"));
 	
+		Thread.sleep(10000);
+		Thread.sleep(10000);
 		Thread.sleep(5000);
-		
-		 
-		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
-		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file, null);
-
-		 Robot rb = null;
+		Robot rb = null;
 		
 		 try {
 			
@@ -166,17 +168,42 @@ public class Sample extends BaseClass{
 
 		 rb.setAutoDelay(2000); // Similar to thread.sleep
 
-		 rb.keyPress(KeyEvent.VK_CONTROL);
-		 rb.keyPress(KeyEvent.VK_V);
-		 rb.keyRelease(KeyEvent.VK_V);
-		 rb.keyRelease(KeyEvent.VK_CONTROL);
+		 rb.keyPress(KeyEvent.VK_BACK_SPACE);
+		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
 		 
-
-		 rb.setAutoDelay(2000);
-
-		 rb.keyPress(KeyEvent.VK_ENTER);
-		 rb.keyRelease(KeyEvent.VK_ENTER);
+		String file =absolutePath+File.separator+text2;
+//		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
+		s.wait(fileInputTextBox, 20);
+        s.type(fileInputTextBox, file );
+        s.click(openButton);
+		
 		 
+//		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
+//		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file, null);
+//
+//		 Robot rb = null;
+//		
+//		 try {
+//			
+//			 rb = new Robot();
+//		} 
+//		 catch (AWTException e) {
+//			
+//		}
+//
+//		 rb.setAutoDelay(2000); // Similar to thread.sleep
+//
+//		 rb.keyPress(KeyEvent.VK_CONTROL);
+//		 rb.keyPress(KeyEvent.VK_V);
+//		 rb.keyRelease(KeyEvent.VK_V);
+//		 rb.keyRelease(KeyEvent.VK_CONTROL);
+//		 
+//
+//		 rb.setAutoDelay(2000);
+//
+//		 rb.keyPress(KeyEvent.VK_ENTER);
+//		 rb.keyRelease(KeyEvent.VK_ENTER);
+		 Thread.sleep(5000);
 		 File f2 = new File(absolutePath);
 			File[] ls1 = f2.listFiles();
 			int length1 = ls1.length;

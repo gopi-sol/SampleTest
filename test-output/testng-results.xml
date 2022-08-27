@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50197" started-at="2022-08-27T09:16:21Z" finished-at="2022-08-27T09:17:12Z">
+  <suite name="Default suite" duration-ms="171196" started-at="2022-08-27T19:36:52Z" finished-at="2022-08-27T19:39:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50197" started-at="2022-08-27T09:16:21Z" finished-at="2022-08-27T09:17:12Z">
+    <test name="Default test" duration-ms="171196" started-at="2022-08-27T19:36:52Z" finished-at="2022-08-27T19:39:43Z">
       <class name="testScenarios.Sample">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:testScenarios.Sample@20398b7c]" name="startTest" is-config="true" duration-ms="381" started-at="2022-08-27T14:46:21Z" finished-at="2022-08-27T14:46:21Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testScenarios.Sample@6c3708b3]" name="startTest" is-config="true" duration-ms="650" started-at="2022-08-28T01:06:52Z" finished-at="2022-08-28T01:06:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:testScenarios.Sample@20398b7c]" name="setup" is-config="true" duration-ms="13186" started-at="2022-08-27T14:46:21Z" finished-at="2022-08-27T14:46:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScenarios.Sample@6c3708b3]" name="setup" is-config="true" duration-ms="30255" started-at="2022-08-28T01:06:52Z" finished-at="2022-08-28T01:07:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testScenarios.Sample@20398b7c]" name="setUp" is-config="true" duration-ms="5" started-at="2022-08-27T14:46:35Z" finished-at="2022-08-27T14:46:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testScenarios.Sample@6c3708b3]" name="setUp" is-config="true" duration-ms="3" started-at="2022-08-28T01:07:23Z" finished-at="2022-08-28T01:07:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="xmlDownload()[pri:0, instance:testScenarios.Sample@20398b7c]" name="xmlDownload" duration-ms="36224" started-at="2022-08-27T14:46:35Z" finished-at="2022-08-27T14:47:12Z">
+        <test-method status="PASS" signature="xmlDownload()[pri:0, instance:testScenarios.Sample@6c3708b3]" name="xmlDownload" duration-ms="140236" started-at="2022-08-28T01:07:23Z" finished-at="2022-08-28T01:09:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- xmlDownload -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:testScenarios.Sample@20398b7c]" name="endTest" is-config="true" duration-ms="6565" started-at="2022-08-27T14:47:12Z" finished-at="2022-08-27T14:47:19Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testScenarios.Sample@6c3708b3]" name="endTest" is-config="true" duration-ms="2350" started-at="2022-08-28T01:09:46Z" finished-at="2022-08-28T01:09:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
