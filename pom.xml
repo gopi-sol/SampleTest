@@ -47,6 +47,7 @@
 		</profile>
 	</profiles>
 
+
 	<dependencies>
 
 		<dependency>
@@ -135,14 +136,14 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/de.openkeyword/autoit -->
+		
 		<dependency>
 			<groupId>de.openkeyword</groupId>
 			<artifactId>autoit</artifactId>
 			<version>0.0.15</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
+		
 		<dependency>
 			<groupId>com.sikulix</groupId>
 			<artifactId>sikulixapi</artifactId>
