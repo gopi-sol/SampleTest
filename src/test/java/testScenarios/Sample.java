@@ -78,8 +78,8 @@ public class Sample extends BaseClass{
 	public void xmlDownload() throws IOException, InterruptedException, FindFailed {
 String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 		 Screen s = new Screen();
-	        Pattern fileInputTextBox = new Pattern(filepath+File.separator+"FileTextBox.PNG");
-	        Pattern openButton = new Pattern(filepath+File.separator+"SaveButton.PNG");
+	        Pattern fileInputTextBox = new Pattern(filepath+File.separator+"FileTextBox.Png");
+	        Pattern openButton = new Pattern(filepath+File.separator+"SaveButton.Png");
 		driver.get("http://www.landxmlproject.org/file-cabinet");
 		 
 		 LocalDate today = LocalDate.now();
