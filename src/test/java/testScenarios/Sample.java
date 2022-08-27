@@ -153,9 +153,7 @@ String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 //		 
 //		 new WebDriverWait(driver, 20).until(ExpectedConditions.titleContains("Untitled"));
 	
-		Thread.sleep(10000);
-		Thread.sleep(10000);
-		Thread.sleep(5000);
+		
 		Robot rb = null;
 		
 		 try {
@@ -166,14 +164,14 @@ String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 			
 		}
 
-		 rb.setAutoDelay(2000); // Similar to thread.sleep
+		 // Similar to thread.sleep
 
 		 rb.keyPress(KeyEvent.VK_BACK_SPACE);
 		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
 		 
 		String file =absolutePath+File.separator+text2;
 //		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
-		s.wait(fileInputTextBox, 20);
+//		s.wait(fileInputTextBox, 20);
         s.type(fileInputTextBox, file );
         s.click(openButton);
 		
