@@ -168,6 +168,17 @@ public static String entireScreenshot() throws IOException  {
 		return absolutePath;
 	}
 
+public static String getAScreenshot() throws IOException {
+	
+
+	TakesScreenshot ts = (TakesScreenshot)driver;
+
+    String dest = ts.getScreenshotAs(OutputType.BASE64);
+
+    return "data:image/jpg;base64, " + dest ;
+		
+	}
+
 public void passDates() {
 	LocalDate today = LocalDate.now();
     System.out.println("Current date: " + today);

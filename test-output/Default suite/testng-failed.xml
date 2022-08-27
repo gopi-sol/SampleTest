@@ -6,7 +6,10 @@
       <class name="testScenarios.Sample">
         <methods>
           <include name="xmlDownload"/>
+          <include name="startTest"/>
           <include name="setup"/>
+          <include name="setUp"/>
+          <include name="endTest"/>
         </methods>
       </class> <!-- testScenarios.Sample -->
     </classes>

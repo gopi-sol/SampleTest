@@ -2,19 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69095" started-at="2022-08-25T20:59:14Z" finished-at="2022-08-25T21:00:23Z">
+  <suite name="Default suite" duration-ms="50197" started-at="2022-08-27T09:16:21Z" finished-at="2022-08-27T09:17:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69095" started-at="2022-08-25T20:59:14Z" finished-at="2022-08-25T21:00:23Z">
+    <test name="Default test" duration-ms="50197" started-at="2022-08-27T09:16:21Z" finished-at="2022-08-27T09:17:12Z">
       <class name="testScenarios.Sample">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testScenarios.Sample@5383967b]" name="setup" is-config="true" duration-ms="25733" started-at="2022-08-26T02:29:14Z" finished-at="2022-08-26T02:29:40Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:testScenarios.Sample@20398b7c]" name="startTest" is-config="true" duration-ms="381" started-at="2022-08-27T14:46:21Z" finished-at="2022-08-27T14:46:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testScenarios.Sample@20398b7c]" name="setup" is-config="true" duration-ms="13186" started-at="2022-08-27T14:46:21Z" finished-at="2022-08-27T14:46:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="xmlDownload()[pri:0, instance:testScenarios.Sample@5383967b]" name="xmlDownload" duration-ms="43285" started-at="2022-08-26T02:29:40Z" finished-at="2022-08-26T02:30:23Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testScenarios.Sample@20398b7c]" name="setUp" is-config="true" duration-ms="5" started-at="2022-08-27T14:46:35Z" finished-at="2022-08-27T14:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="xmlDownload()[pri:0, instance:testScenarios.Sample@20398b7c]" name="xmlDownload" duration-ms="36224" started-at="2022-08-27T14:46:35Z" finished-at="2022-08-27T14:47:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- xmlDownload -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:testScenarios.Sample@20398b7c]" name="endTest" is-config="true" duration-ms="6565" started-at="2022-08-27T14:47:12Z" finished-at="2022-08-27T14:47:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
       </class> <!-- testScenarios.Sample -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
