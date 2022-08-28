@@ -156,7 +156,7 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 //		}
 //		 
 //		 new WebDriverWait(driver, 20).until(ExpectedConditions.titleContains("Untitled"));
-	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	Thread.sleep(3000);
 //		Thread.sleep(10000);
 //		Thread.sleep(10000);
 //		Thread.sleep(10000);
@@ -176,7 +176,7 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
 		 System.out.println("Deleted default filename");
 		 test.log(LogStatus.PASS, test.addScreenCapture(getAScreenshot()) +"Deleted default filename");
-		 Thread.sleep(5000);
+		 driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		String file =absolutePath+File.separator+text2;
 //		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
 //		s.wait(fileInputTextBox, 20);
