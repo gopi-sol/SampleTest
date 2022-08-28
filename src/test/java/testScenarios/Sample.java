@@ -76,7 +76,11 @@ public class Sample extends BaseClass{
 	 
 	 @Test
 	public void xmlDownload() throws IOException, InterruptedException, FindFailed {
-String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
+//String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
+		 System.out.println("C:\\Users\\gopin\\eclipse-workspace\\sample\\Property");
+String filepath = System.getProperty("user.dir")+File.separator+"Property";
+System.out.println(System.getProperty("user.dir"));
+System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 		 Screen s = new Screen();
 	        Pattern fileInputTextBox = new Pattern(filepath+File.separator+"FileTextBox.Png");
 	        Pattern openButton = new Pattern(filepath+File.separator+"SaveButton.Png");
@@ -153,8 +157,9 @@ String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 //		 
 //		 new WebDriverWait(driver, 20).until(ExpectedConditions.titleContains("Untitled"));
 	
-		
-		Thread.sleep(5000);
+		Thread.sleep(10000);
+		Thread.sleep(10000);
+		Thread.sleep(10000);
 		Robot rb = null;
 		
 		 try {
@@ -169,7 +174,7 @@ String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 
 		 rb.keyPress(KeyEvent.VK_BACK_SPACE);
 		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
-		 
+		 Thread.sleep(2000);
 		String file =absolutePath+File.separator+text2;
 //		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
 //		s.wait(fileInputTextBox, 20);
@@ -214,7 +219,7 @@ String filepath = "C:\\Users\\gopin\\eclipse-workspace\\sample\\Property";
 					if (FilenameUtils.getName(AbsolutePath).equals(text)) {
 						 
 						test.log(LogStatus.PASS, test.addScreenCapture(getAScreenshot()) +"Saved");
-
+						System.out.println(AbsolutePath);
 					}else {
 						test.log(LogStatus.FAIL, test.addScreenCapture(getAScreenshot()) +"not saved");
 						System.out.println(AbsolutePath);
