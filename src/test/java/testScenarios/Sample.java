@@ -176,7 +176,7 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
 		 System.out.println("Deleted default filename");
 		 test.log(LogStatus.PASS, test.addScreenCapture(getAScreenshot()) +"Deleted default filename");
-		 Thread.sleep(2000);
+		 Thread.sleep(5000);
 		String file =absolutePath+File.separator+text2;
 //		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
 //		s.wait(fileInputTextBox, 20);
