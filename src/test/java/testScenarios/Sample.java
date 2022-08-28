@@ -156,10 +156,10 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 //		}
 //		 
 //		 new WebDriverWait(driver, 20).until(ExpectedConditions.titleContains("Untitled"));
-	
-		Thread.sleep(10000);
-		Thread.sleep(10000);
-		Thread.sleep(10000);
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//		Thread.sleep(10000);
+//		Thread.sleep(10000);
+//		Thread.sleep(10000);
 		Robot rb = null;
 		
 		 try {
