@@ -174,6 +174,8 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
 
 		 rb.keyPress(KeyEvent.VK_BACK_SPACE);
 		 rb.keyRelease(KeyEvent.VK_BACK_SPACE);
+		 System.out.println("Deleted default filename");
+		 test.log(LogStatus.PASS, test.addScreenCapture(getAScreenshot()) +"Deleted default filename");
 		 Thread.sleep(2000);
 		String file =absolutePath+File.separator+text2;
 //		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
@@ -182,7 +184,7 @@ System.out.println(System.getProperty("user.dir")+File.separator+"Property");
         s.click(openButton);
 		
 		 
-//		 StringSelection file = new StringSelection(absolutePath+File.separator+text2);
+//		 String Selection file = new StringSelection(absolutePath+File.separator+text2);
 //		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file, null);
 //
 //		 Robot rb = null;
